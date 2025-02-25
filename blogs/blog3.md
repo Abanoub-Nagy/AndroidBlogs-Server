@@ -25,7 +25,8 @@ dependencies {
     kapt "androidx.room:room-compiler:$room_version" // For Kotlin, use kapt instead of annotationProcessor
     implementation "androidx.room:room-ktx:$room_version" // Optional: Kotlin extensions and coroutines support
 }
-Key Components of Room
+```
+## Key Components of Room
 Room consists of three main components:
 
 Entity: Represents a table in the database.
@@ -69,6 +70,7 @@ interface UserDao {
     @Query("DELETE FROM user_table")
     suspend fun deleteAllUsers()
 }
+
 3. Database
 The Database class acts as the main access point to the database. It ties the entities and DAOs together.
 
